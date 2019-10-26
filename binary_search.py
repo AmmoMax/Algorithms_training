@@ -14,16 +14,17 @@ def binary_search(sort_list, item):
     low = 0
     high = len(sort_list) - 1
     while low <= high:
-        mid = (low + high) // 2
-
+        mid = (low + high) // 2  # делим список пополам и округляем в меньшую сторону
         if sort_list[mid] == item:
-            return sort_list[mid]
+            return mid
         if sort_list[mid] > item:
             high = mid - 1
         else:
             low = mid + 1
-    return None
+    return None  # если ничего не нашли и вышли из цикла - возвращаем None
 
 
 sample_list = [1, 2, 5, 7, 9, 11, 23, 54, 87, 121, 123, 543]
-print(binary_search(sample_list, 5412))
+sample_list_2 = []
+
+print(binary_search(sample_list, 543))
