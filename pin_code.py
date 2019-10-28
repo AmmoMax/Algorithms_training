@@ -1,4 +1,6 @@
-tions = {
+#! coding: utf-8
+
+options = {
     '0': '08',
     '1': '124',
     '2': '2153',
@@ -28,19 +30,3 @@ def pin_one_digit(count_odo):
 result_list = []
 original_pin = input('введите пинкод: ')
 print(pin_one_digit(''))
-
-'''
-    if len(count_odo) + 1 == len(original_pin):
-        digit_num = len(short_pin) + 1
-        for p in options[str(digit_num)]:
-            print(short_pin + p)
-    elif len(short_pin) < len(original_pin):
-        digit_num = len(short_pin) + 1
-        for p in options[str(digit_num)]:
-            res = short_pin + p
-            pin_one_digit(res)
-    elif len(short_pin) >= len(original_pin):
-        print('Ошибка! Слишком длинный пинкод')
-
-
-# '''
