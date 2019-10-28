@@ -20,11 +20,11 @@ def find_smallest(arr):  # функция поиска индекса наиме
 
 
 def selection_sort(arr):  # функция сортировки выбором
-    resarr = []
+    res_arr = []
     for i in range(len(arr)):
         smallest = find_smallest(arr)  # находим наименьший элемент входного массива
-        resarr.append(arr.pop(smallest))  # добавляем наименьший элемент в финальный массив и удаляем из входного массива
-    return resarr
+        res_arr.append(arr.pop(smallest))  # добавляем наименьший элемент в финальный массив и удаляем из входного массива
+    return res_arr
 
 
 print(selection_sort(test_arr3))
