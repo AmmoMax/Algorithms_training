@@ -19,7 +19,7 @@ def find_smallest(arr):  # функция поиска индекса наиме
     return smallest_index
 
 
-def selectionSort(arr):  # функция сортировки выбором
+def selection_sort(arr):  # функция сортировки выбором
     resarr = []
     for i in range(len(arr)):
         smallest = find_smallest(arr)  # находим наименьший элемент входного массива
@@ -27,4 +27,4 @@ def selectionSort(arr):  # функция сортировки выбором
     return resarr
 
 
-print(selectionSort(test_arr3))
+print(selection_sort(test_arr3))
