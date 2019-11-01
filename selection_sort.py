@@ -1,6 +1,5 @@
 # coding: utf-8
 
-# простейшая реализация алгоритма сортировки выбором.
 # Simple Selection Sort Algorithm
 
 test_arr = [23, 9, 232, 685, 3, 454, 12]
@@ -8,7 +7,7 @@ test_arr2 = []
 test_arr3 = [23]
 
 
-def find_smallest(arr):  # функция поиска индекса наименьшего элемента в массиве
+def find_smallest(arr):  # find smallest element in array
     smallest = arr[0]
     smallest_index = 0
 
@@ -19,12 +18,12 @@ def find_smallest(arr):  # функция поиска индекса наиме
     return smallest_index
 
 
-def selection_sort(arr):  # функция сортировки выбором
+def selection_sort(arr):  # Selection Sort function
     res_arr = []
     for i in range(len(arr)):
-        smallest = find_smallest(arr)  # находим наименьший элемент входного массива
-        res_arr.append(arr.pop(smallest))  # добавляем наименьший элемент в финальный массив и удаляем из входного массива
+        smallest = find_smallest(arr)  # find smallest element of input array
+        res_arr.append(arr.pop(smallest))  # add smallest to result and del from input array
     return res_arr
 
 
-print(selection_sort(test_arr3))
+print(selection_sort(test_arr))
