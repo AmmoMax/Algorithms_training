@@ -25,7 +25,8 @@ def quick_sort_recur(arr):  # Вариант через рекурсию в фу
     if len(arr) <= 1:
         return arr
     else:
-        basis = random.choice(arr)  # выбираем случайный опорный элемент
+        # basis = random.choice(arr)  # выбираем случайный опорный элемент
+        basis = arr[0]  # выбираем случайный опорный элемент
         less = [i for i in arr[1:] if i <= basis]  # формируем список с элементами < опорного
         greater = [i for i in arr[1:] if i > basis]  # список с элементами > опорного
         return quick_sort_recur(less) + [basis] + quick_sort_recur(greater)  # возвращаем финальный список
